@@ -1,0 +1,276 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* man heading css start */
+#man-heading{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#head1{    
+    color: rgb(27, 202, 27);
+}
+
+.head3{
+    color: white;
+}
+
+/* man heading css end */
+
+/* contenor css start */
+#bigCont{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 100px 100px 100px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+#contenor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 50px 0px 50px 0px;
+}
+
+
+/* contenor css end */
+
+/* section left css start */
+#section-left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border-radius: 50px;
+    height: 730px;
+    width: 550px;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+
+img{
+    width: 250;
+    height: 250;
+    border-radius: 50%;
+}
+
+#journey-head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+#journey-details {
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    overflow: auto; /* Scroll bar show karega agar content ziada ho */
+    line-height: 30px;
+    word-spacing: 7px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* section left css end */
+
+/* section right css start */
+
+#section-right{
+    display: flex;
+    background-color: rgb(12, 12, 12);
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 400px;
+    height: 730px;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    margin-right: 100px;
+}
+
+.sub-heading{
+    font-size: 17px;
+}
+.head2{
+    color: rgb(27, 202, 27);
+}
+
+.data{
+    display: flex;
+    gap: 20px;
+}
+.data ul li {
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.details{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+button{
+    background-color: rgb(34, 202, 34);
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+    
+}
+/* section right css end */
+
+
+@media only screen and (max-width: 1024px) {
+  #section-left{
+    gap: 50px;
+    width: 350px;
+    padding-top: 30px;
+}
+
+#journey-details {
+    width: 300px;
+}
+
+.sub-heading h1{
+    font-size: 28px;
+}
+
+
+#section-right{
+    width: 350px;   
+}
+
+}
+
+@media only screen and (max-width: 786px) {
+  #man-heading h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#contenor{
+    width: 700px;
+    gap: 10px;
+}
+
+#section-left{
+    gap: 20px;
+    width: 340px;
+    padding-top: 30px;
+}
+
+#journey-details {
+    width: 180px;
+}
+
+.sub-heading h1{
+    font-size: 28px;
+}
+
+
+#section-right{
+    width: 340px;   
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+#journey-head h1{
+    font-size: 25px;
+}
+
+}
+
+@media only screen and (max-width: 425px) {
+#man-heading h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#contenor{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+#bigCont{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+}
+
+
+#section-left{
+    order: 2;
+    gap: 20px;
+    width: 400px;
+    height: 670px;
+    /* margin-right: 10px; */
+}
+
+#journey-details {
+    width: 380px;
+    height: 300px;
+}
+
+.sub-heading h1{
+    font-size: 38px;
+}
+
+
+#section-right{
+    order: 1;
+    gap: 20px;
+    width: 400px;  
+        margin-left: 100px;
+        height: 850px;
+
+}  
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+}
